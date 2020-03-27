@@ -15,8 +15,8 @@ pipeline {
       //sh 'cd 
      //sh 'sudo chmod 755 terraform-new-v'
      //sh 'sudo chmod 755 projects'
-     dir ('/projects/A') {
-         sh 'sudo /home/ec2-user/terraform init ./jenkins'}
+     dir ('sudo /projects/A') {
+         sh 'sudo terraform init'}
      sh 'sudo terraform plan -out testmy_plan'
      echo "=========================================================================="
       
