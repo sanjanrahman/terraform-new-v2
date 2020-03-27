@@ -14,7 +14,9 @@ stage('build') {
      sh 'cd $WORKSPACE'
      dir ('/terraform-new-v2/projects/A')
      //dir ('terraform-new-v2/projects/A') {
-     sh 'terraform init'
+     sh 'sudo terraform init'
+     echo "=========================================================================="
+     //sh 'sudo terraform plan'
     }
      echo "done init"
         }
