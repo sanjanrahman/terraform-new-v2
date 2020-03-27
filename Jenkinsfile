@@ -12,8 +12,8 @@ pipeline {
   steps {
     echo "...Building. terraform"
      sh 'cd $WORKSPACE'
-     sh 'sudo chmod 777 terraform-new-v2'
-     dir ('/terraform-new-v2/projects/A') {
+     //sh 'sudo chmod 777 terraform-new-v2'
+     dir ('/projects/A') {
      sh 'chmod 700 *.tf'
      echo "done changing file permission"
      //dir ('terraform-new-v2/projects/A') {
