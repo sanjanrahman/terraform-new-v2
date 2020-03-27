@@ -4,7 +4,7 @@ pipeline{
   steps{
    script{
     echo"TARGET_ENVIRONMENT: ${params.TARGET_ENVIRONMENT}"
-    git(branch: 'master',credentialsId: '6b4562bd-e947-4f59-ab5e-4b3f96d1f519',url: 'https://github.com/sanjanrahman/test-run-terraform-ci',changelog: true)}}}
+    git(branch: 'master',credentialsId: '6b4562bd-e947-4f59-ab5e-4b3f96d1f519',url: 'https://github.com/sanjanrahman/terraform-new-v2',changelog: true)}}}
     stage('build') {
      steps {
      echo "...Building. terraform"
