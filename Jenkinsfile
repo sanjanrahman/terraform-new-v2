@@ -20,7 +20,9 @@ pipeline {
      //sh 'chmod 700 *.tf'
      echo "done changing file permission"
      //dir ('terraform-new-v2/projects/A') {
-     sh 'sudo /var/lib/jenkins/workspace/terraform-new-v2/projects/A/terraform init'
+     sh 'cd /var/lib/jenkins/workspace/terraform-new-v2/projects/A/'
+     sh 'terraform init'
+     sh 'terraform plan -out testmy_plan'
      echo "=========================================================================="
      //sh 'sudo terraform plan'
     }
