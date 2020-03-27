@@ -14,6 +14,7 @@ pipeline {
      sh 'cd $WORKSPACE'
       //sh 'cd 
      //sh 'sudo chmod 755 terraform-new-v'
+     sh 'sudo chmod 755 projects'
      dir ('/projects/A') {
       
      //sh 'chmod 700 *.tf'
