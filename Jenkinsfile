@@ -16,18 +16,17 @@ pipeline {
      //sh 'sudo chmod 755 terraform-new-v'
      //sh 'sudo chmod 755 projects'
      dir ('/projects/A') {
+         sh 'sudo /home/ec2-user/terraform init ./jenkins'}
+     sh 'sudo terraform plan -out testmy_plan'
+     echo "=========================================================================="
       
      //sh 'chmod 700 *.tf'
      sh 'pwd'
      //dir ('terraform-new-v2/projects/A') {
      //sh 'cd /var/lib/jenkins/workspace/terraform-new-v2/projects/A/'
-     //sh 'sudo terraform init'
-     sh 'sudo /home/ec2-user/terraform init ./jenkins'
-     sh 'sudo terraform plan -out testmy_plan'
-     echo "=========================================================================="
+     //sh 'sudo terraform init
      //sh 'sudo terraform plan'
     }
         }
      }
-}
 }
