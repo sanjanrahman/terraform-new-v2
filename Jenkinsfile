@@ -8,8 +8,8 @@ pipeline {
     }
   }
 }
-stage('build') {
- steps {
+ stage('build') {
+  steps {
     echo "...Building. terraform"
      sh 'cd $WORKSPACE'
      dir ('/terraform-new-v2/projects/A')
