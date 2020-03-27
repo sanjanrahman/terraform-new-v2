@@ -21,7 +21,8 @@ pipeline {
      echo "done changing file permission"
      //dir ('terraform-new-v2/projects/A') {
      sh 'cd /var/lib/jenkins/workspace/terraform-new-v2/projects/A/'
-     sh 'sudo terraform init'
+     //sh 'sudo terraform init'
+     sh 'sudo /home/ec2-user/terraform init ./jenkins'
      sh 'sudo terraform plan -out testmy_plan'
      echo "=========================================================================="
      //sh 'sudo terraform plan'
