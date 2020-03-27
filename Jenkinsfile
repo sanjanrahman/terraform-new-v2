@@ -13,7 +13,7 @@ pipeline {
     echo "...Building. terraform"
      sh 'cd $WORKSPACE'
       //sh 'cd 
-     sh 'sudo chmod 755 terraform-new-v2'
+     //sh 'sudo chmod 755 terraform-new-v2'
      dir ('/projects/A') {
      //sh 'chmod 700 *.tf'
      echo "done changing file permission"
